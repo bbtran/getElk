@@ -7,12 +7,13 @@ import { NavbarBrand } from '../components/NavbarBrand';
 
 class Navbar extends Component {
   render() {
+    console.log('pageContent:', this.props.pageContent);
     return (
       <div className="navigation-container">
         <div className="main-nav">
           <nav className="navbar">
             <div className="navbar-header">
-              <NavbarBrand />
+              <NavbarBrand logo={this.props.pageContent.nav.logo} />
             </div>
             <div className="navbar-list">
               <ul>
