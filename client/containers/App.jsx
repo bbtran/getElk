@@ -17,13 +17,12 @@ class App extends Component {
   // Called right after the initial rendering but before componentWillReceiveProps
   componentDidMount() {
     this.props.getPageContent();
+    this.props.getTestimonials();
   }
 
   // Called after initial render. Once props are received, the component is re-rendered
   componentWillReceiveProps(nextProps) {
-    console.log('currentProps:', this.props.pageContent);
-    console.log('nextProps:', nextProps.pageContent);
-    if (nextProps.pageContent) {
+    if (nextProps.pageContent.app.name) {
       this.setState({
         loading: false,
       });
@@ -42,6 +41,7 @@ function mapStateToProps({ pageContent }) {
 
 App.propTypes = {
   getPageContent: PropTypes.func,
+  getTestimonials: PropTypes.func,
   pageContent: PropTypes.object,
 };
 
