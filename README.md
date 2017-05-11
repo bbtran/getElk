@@ -2,8 +2,8 @@
 ## Version 1.0.0
 * GetElk is a fullstack React/Redux application, utilzing a Node.js/Express server. Data is retrieved from an external API and sent from the sever to the client. All of the data is fetched prior to page rendering. Both testimonials and page content are stored in separate redux stores. GetElk is fully responsive for all devices including smartphones and tablets.
 
-![Alt text](images/getElk.png "GetElk")
-![Alt text](images/getElkGifSmall.gif "GetElkMobile")
+![GetElk](img/getElk.png "GetElk")
+![GetElkMobile](img/getElkGifSmall.gif "GetElkMobile")
 # Tech Stack
 ## Frontend
 * [React](https://facebook.github.io/react/)-[Redux](https://github.com/reactjs/redux) - JS libraries for rendering page views and maintaining state
