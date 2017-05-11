@@ -66,20 +66,30 @@
   button.buttonOne {
     color: @theme-primary;
     background-color: white;
-    border: white;
+    border: 2px solid white;
     margin-right: 10px;
+    cursor: pointer;
     .mobile({
       margin: 5px;
     });
+    &:hover {
+      color: white;
+      background-color: @theme-primary;
+    }
   }
   button.buttonTwo {
     color: white;
     background: transparent;
     border: 2px solid white;
     margin-left: 10px;
+    cursor: pointer;
     .mobile({
       margin: 5px;
     });
+    &:hover {
+      color: @theme-primary;
+      background-color: white;
+    }
   }
   .buttons {
     .tablet({
