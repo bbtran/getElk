@@ -6,6 +6,20 @@ import NavbarListItem from '../components/NavbarListItem';
 import { NavbarBrand } from '../components/NavbarBrand';
 
 class Navbar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      hidden: true,
+    };
+    this.handleToggle = this.handleToggle.bind(this);
+  }
+
+  handleToggle(e) {
+    console.log(e);
+    this.setState({
+      hidden: !this.state.hidden,
+    });
+  }
   render() {
     console.log('pageContent:', this.props.pageContent);
     return (
@@ -14,11 +28,12 @@ class Navbar extends Component {
           <nav className="navbar">
             <div className="navbar-header">
               <NavbarBrand logo={this.props.pageContent.nav.logo} />
-              <div className="navbar-list">
+              <div className={this.state.hidden ? 'navbar-list' : 'navbar-list visible'}>
                 <ul>
                   {this.props.pageContent.nav.items.map((item) => <NavbarListItem key={item.action} title={item.title} />)}
                 </ul>
               </div>
+              <button className="toggle" onClick={this.handleToggle}>☰</button>
             </div>
           </nav>
         </div>

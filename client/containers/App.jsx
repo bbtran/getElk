@@ -31,7 +31,7 @@ class App extends Component {
 
   render() {
     // If props have not been received, then show Loading otherwise render the contents.
-    return this.state.loading ? <div className="loading"> Loading... </div> : <Main />;
+    return this.state.loading ? <div className="loading"></div> : <Main />;
   }
 }
 
