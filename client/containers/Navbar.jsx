@@ -14,11 +14,11 @@ class Navbar extends Component {
           <nav className="navbar">
             <div className="navbar-header">
               <NavbarBrand logo={this.props.pageContent.nav.logo} />
-            </div>
-            <div className="navbar-list">
-              <ul>
-                {this.props.pageContent.nav.items.reverse().map((item) => <NavbarListItem key={item.action} title={item.title} />)}
-              </ul>
+              <div className="navbar-list">
+                <ul>
+                  {this.props.pageContent.nav.items.map((item) => <NavbarListItem key={item.action} title={item.title} />)}
+                </ul>
+              </div>
             </div>
           </nav>
         </div>

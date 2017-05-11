@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Main from './Main';
 import * as actions from '../actions';
-// import '../../styles/base.scss';
+import '../../styles/base.less';
 
 class App extends Component {
   constructor(props) {
