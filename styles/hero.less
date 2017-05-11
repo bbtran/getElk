@@ -1,0 +1,90 @@
+.hero-bar {
+  .transition-all;
+  .container {
+    background-color: @theme-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 400px;
+    .mobile({
+      height: auto;
+    });
+  }
+  .col-left {
+    padding: 50px 35px 25px 0;
+    width: 33.33%;
+    .desktop({
+      width: 40%;
+    });
+    .tablet({
+      width: 100%;
+      padding: 35px 10px 0 10px;
+      max-width: 100%;
+    });
+  }
+  .col-right {
+    padding: 50px 0 35px 35px;
+    width: 33.33%;
+    .desktop({
+      width: 40%;
+    });
+    .tablet({
+      width: 100%;
+      padding: 0 10px 35px 10px;
+      max-width: 100%;
+    });
+  }
+  h2 {
+    .sans-serif-regular;
+    color: white;
+    text-align: center;
+    font-size: 42px;
+    .desktop({
+      font-size: 30px;
+    });
+    .tablet({
+      text-align: center;
+      font-size: 40px;
+    });
+  }
+  p {
+    .sans-serif-font;
+    color: white;
+    line-height:25px;
+    font-size:18px;
+    padding-bottom: 30px;
+    .tablet({
+      text-align: center;
+    });
+  }
+  button {
+    font-size: 16px;
+    width: 120px;
+    height: 38px;
+  }
+  button.buttonOne {
+    color: @theme-primary;
+    background-color: white;
+    border: white;
+    margin-right: 10px;
+    .mobile({
+      margin: 5px;
+    });
+  }
+  button.buttonTwo {
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    margin-left: 10px;
+    .mobile({
+      margin: 5px;
+    });
+  }
+  .buttons {
+    .tablet({
+      text-align: center;
+    });
+  }
+}
+
