@@ -8,7 +8,7 @@ export default class Features extends Component {
      return (
        <section className="features">
          <div className="container">
-           <h3 >{this.props.title}</h3>
+           <h2>{this.props.title}</h2>
            <ul>
              {this.props.items.map((item) => <FeatureItem key={item.title} title={item.title} description={item.description} />)}
            </ul>

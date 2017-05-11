@@ -7,9 +7,9 @@ export default class FeatureItem extends Component {
       <li className="feature-item">
         <div>
           <h4>{this.props.title}</h4>
-          <div>
+          <p>
             {this.props.description}
-          </div>
+          </p>
         </div>
       </li>
     );
