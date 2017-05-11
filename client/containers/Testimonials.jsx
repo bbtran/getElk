@@ -11,7 +11,7 @@ class Testimonials extends Component {
     };
   }
   render() {
-    if (this.state.testimonials) {
+    if (this.state.testimonials.testimonials_header) {
       console.log(this.state.testimonials);
       return (
         <section className="testimonials">

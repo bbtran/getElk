@@ -4,7 +4,6 @@ import FeatureItem from './FeatureItem';
 
 export default class Features extends Component {
    render() {
-     console.log(this.props);
      return (
        <section className="features">
          <div className="container">

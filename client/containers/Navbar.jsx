@@ -15,13 +15,11 @@ class Navbar extends Component {
   }
 
   handleToggle(e) {
-    console.log(e);
     this.setState({
       hidden: !this.state.hidden,
     });
   }
   render() {
-    console.log('pageContent:', this.props.pageContent);
     return (
       <div className="navigation-container">
         <div className="main-nav">

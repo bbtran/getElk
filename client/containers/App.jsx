@@ -31,7 +31,18 @@ class App extends Component {
 
   render() {
     // If props have not been received, then show Loading otherwise render the contents.
-    return this.state.loading ? <div className="loading"></div> : <Main />;
+    return (
+    this.state.loading ? <div className="loading"></div> : <div className="router">
+      <Switch>
+        <Route exact path="/" component={Main} />
+        <Route path="/features" component={Main} />
+        <Route path="/pricing" component={Main} />
+        <Route path="/login" component={Main} />
+        <Route path="/start-free-trial" component={Main} />
+      </Switch>
+    </div>
+
+    );
   }
 }
 
