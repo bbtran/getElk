@@ -7,16 +7,18 @@ export default class Hero extends Component {
       <section className="hero-bar">
         <div className="container">
           <div className="col-left">
-            {this.props.title}
+            <h2>{this.props.title}</h2>
           </div>
           <div className="col-right">
-            {this.props.text}
-            <button type="submit">
-              {this.props.buttonOne}
-            </button>
-            <button type="submit">
-              {this.props.buttonTwo}
-            </button>
+            <p>{this.props.text}</p>
+            <div className="buttons">
+              <button type="submit" className="buttonOne">
+                {this.props.buttonOne}
+              </button>
+              <button type="submit" className="buttonTwo">
+                {this.props.buttonTwo}
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -29,4 +31,4 @@ Hero.propTypes = {
   text: PropTypes.string,
   buttonOne: PropTypes.string,
   buttonTwo: PropTypes.string,
-}
+};

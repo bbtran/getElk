@@ -6,7 +6,11 @@ export default class NavbarListItem extends Component {
   render() {
     return (
       <li>
-        <Link className="nav-link" to="/">{this.props.title}</Link>
+        <Link className="nav-link" to="/">
+          <div className="background">
+            {this.props.title}
+          </div>
+        </Link>
       </li>
     );
   }

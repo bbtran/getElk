@@ -9,11 +9,15 @@ export default class TestimonialsItem extends Component {
           <div className="avatar">
             <img src={this.props.avatar} alt="avatar" />
           </div>
-          <div className="user-name">{this.props.firstName + ' ' + this.props.lastName}</div>
-          <div className="company">{this.props.company}</div>
+          <div className="info">
+            <div className="user-name">
+              {this.props.firstName + ' ' + this.props.lastName}
+            </div>
+            <div className="company">{this.props.company}</div>
+          </div>
         </div>
         <div className="testimonial-text">
-          {this.props.testimony}
+          {'"' + this.props.testimony + '"'}
         </div>
       </li>
     );
