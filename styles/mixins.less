@@ -1,0 +1,52 @@
+// Mixins
+.small-mobile(@rules) {
+  @media (max-width:@small-mobile-width) {
+    @rules();
+  }
+}
+
+.mobile(@rules) {
+  @media (max-width: @mobile-width) {
+    @rules();
+  }
+}
+
+.tablet(@rules) {
+  @media (max-width: @tablet-width) {
+    @rules();
+  }
+}
+
+.desktop(@rules) {
+  @media (max-width: @desktop-width) {
+    @rules();
+  }
+}
+
+.border-radius(@rules) {
+  -webkit-border-radius: @rules;
+     -moz-border-radius: @rules;
+      -ms-border-radius: @rules;
+          border-radius: @rules;
+}
+
+.transition-all() {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.sans-serif-font() {
+  font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 300;
+}
+
+.sans-serif-regular() {
+  font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+}
+
+.sans-serif-bold() {
+  font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+}
