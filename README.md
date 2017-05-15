@@ -42,7 +42,7 @@ Initiate both Development and Production servers by running the following:
 
 ```$ npm run build``` and then ```$ npm run start```. Once complete, in a separate terminal run ```$ npm run dev```
 
-Fronend development changes are reflected immediately on ```http://localhost:8080```
+Frontend development changes are reflected immediately on ```http://localhost:8080```
 Production server is on ```http://localhost:3000```
 
 ## Contributing
